@@ -1,7 +1,15 @@
-{{page-title "EmberIssue19496"}}
+{{page-title "ember-source issue #19496"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
+{{!-- does not compile --}}
+<div>
+  <button>Hello World!</button>
+</div>
+
+{{!-- compiles successfully --}}
+<div>
+  <span>Hello World!</span>
+</div>
+
 <WelcomePage />
-{{!-- Feel free to remove this! --}}
 
 {{outlet}}
